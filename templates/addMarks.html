@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card shadow border-0">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Insert details</h5>
+      <form>
+          <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="formGroupExampleInput">Student roll no.</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="roll no.">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="formGroupExampleInput2">ExamID</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ExamID">
+              </div>
+          </div>
+      </form>
+    <a href="#" class="btn btn-primary">continue</a>
+  </div>
+</div>
+
+{# if condition #}
+<div class="card mt-lg-5 shadow border-0">
+  <div class="card-body">
+    <h5 class="card-title text-primary">Insert subject-wise marks</h5>
+      <p>Exam name: ___</p>
+      <p>Date: ___</p>
+      <p>Total marks per subject: ___</p>
+      <form>
+              <div class="form-row col-md-2">
+                <span>subject_name</span>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="marks obtained">
+              </div>
+      </form>
+      <br>
+      <form>
+              <div class="form-row col-md-2">
+                <span>subject_name</span>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="marks obtained">
+              </div>
+      </form>
+      <br>
+      <form>
+              <div class="form-row col-md-2">
+                <span>subject_name</span>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="marks obtained">
+              </div>
+      </form>
+      <br>
+      <form>
+              <div class="form-row col-md-2">
+                <span>subject_name</span>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="marks obtained">
+              </div>
+      </form>
+      <br>
+    <a href="#" class="btn btn-primary">Verify and update marks</a>
+      <div class="text-info"> Note: you can update marks only once</div>
+  </div>
+</div>
+
+
+{% endblock %}

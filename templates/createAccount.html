@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-1">
+                    <div class="card signup-form">
+                        <div class="card-header bg-primary font-weight-bold text-white text-center">
+                            create new student account
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <!-- Personal Information -->
+                                <div class="form-row">
+                                    <div class="col-md-12 text-primary h5">
+                                        <p>Presonal Information</p>
+                                    </div>
+                                    
+                                        <div class="form-group col-md-4">
+                                            <label for="userID">User ID</label>
+                                            <input type="text" class="form-control" id="userID" placeholder="User ID">
+                                        </div>
+                                    
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" class="form-control" id="firstName"
+                                                placeholder="First Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="middleName">Middle Name</label>
+                                            <input type="text" class="form-control" id="middleName"
+                                                placeholder="Middle Name">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="middleName">Last Name</label>
+                                            <input type="text" class="form-control" id="LastName"
+                                                placeholder="LastName">
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="gender">Gender</label>
+                                        <select id="gender" class="form-control">
+                                            <option selected>Choose...</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="birthDate">Birth Date</label>
+                                        <input type="date" class="form-control" id="birthDate">
+                                    </div>
+                                    <div class="col-md-4 mb-lg-4">
+                                        <label for="birthPlace" class="form-label">Birth Place</label>
+                                        <input type="text" class="form-control" id="birthPlace"
+                                            placeholder="Enter birth place" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4">
+                                            <label for="motherTongue">Mother Tongue</label>
+                                            <input type="text" class="form-control" id="motherTongue"
+                                                placeholder="Mother Tongue">
+                                        </div>
+
+                                        <div class="form-group col-md-2">
+                                            <label for="bloodGroup">Blood Group</label>
+                                            <input type="text" class="form-control" id="bloodGroup"
+                                                placeholder="Blood Group">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="nationality">Nationality</label>
+                                            <input type="text" class="form-control" id="nationality"
+                                                placeholder="Nationality">
+                                        </div>
+                                        <div class="form-group col-md-3">
+                                            <label for="religion">Religion</label>
+                                            <input type="text" class="form-control" id="religion"
+                                                placeholder="Religion">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="motherName">Mother Name</label>
+                                            <input type="text" class="form-control" id="motherName"
+                                                placeholder="Mother Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="fatherName">Father Name</label>
+                                            <input type="text" class="form-control" id="fatherName"
+                                                placeholder="Father Name">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="annualIncome">Annual Income</label>
+                                            <input type="text" class="form-control" id="annualIncome"
+                                                placeholder="in INR">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Academic information-->
+                                <div class="form-row">
+                                    <div class="col-md-12 mt-4 mb-0 text-primary h5">
+                                        <p>Academic Information</p>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="programName">Program Name</label>
+                                        <input type="text" class="form-control" id="programName"
+                                            placeholder="Program Name">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="degree">Degree</label>
+                                        <input type="text" class="form-control" id="degree" placeholder="Degree">
+                                    </div>
+
+                                    <div class="form-group col-md-4">
+                                        <label for="batchYear">Batch Year</label>
+                                        <input type="text" class="form-control" id="batchYear" placeholder="Batch Year">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="rollNumber" class="form-label">Roll Number</label>
+                                        <input type="text" class="form-control" id="rollNumber"
+                                            placeholder="Enter roll number" required>
+                                    </div>
+                                </div>
+                                <!-- Contact Information -->
+                                <div class="form-row">
+                                    <div class="col-md-12 mt-4 mb-0 text-primary h5">
+                                        <p>Contact Information</p>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="mobileNo" class="form-label">Mobile No.</label>
+                                        <input type="tel" class="form-control" id="mobileNo"
+                                            placeholder="Enter mobile number" required>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="phoneNo">Phone No.</label>
+                                        <input type="text" class="form-control" id="phoneNo" placeholder="Phone No.">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter email address" required>
+                                    </div>
+                                    <div class="col-md-12 mt-4 mb-0 text-primary h5">
+                                        <p>Address</p>
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="houseNo">House No.</label>
+                                        <input type="text" class="form-control" id="houseNo" placeholder="House No.">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="streetName">Street Name</label>
+                                        <input type="text" class="form-control" id="streetName"
+                                            placeholder="Street Name">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="area">Area/Landmark</label>
+                                        <input type="text" class="form-control" id="area" placeholder="Area/Landmark">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="city">City</label>
+                                        <input type="text" class="form-control" id="city" placeholder="City">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="pincode">Pincode</label>
+                                        <input type="text" class="form-control" id="pincode" placeholder="Pincode">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="state">State</label>
+                                        <input type="text" class="form-control" id="state" placeholder="State">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="country">Country</label>
+                                        <input type="text" class="form-control" id="country" placeholder="Country">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <button type="submit" class="btn btn-primary m-auto">Create Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+</div>
+    
+{% endblock %}
